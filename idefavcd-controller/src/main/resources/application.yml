@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      url: jdbc:mysql://192.168.0.120:32051/db_idefavcd
+      username: root
+      password: 111111
