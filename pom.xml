@@ -28,6 +28,7 @@
     <properties>
         <mybatis-plus.version>3.3.2</mybatis-plus.version>
         <mybatis-plus-generator-ui.version>1.1.0</mybatis-plus-generator-ui.version>
+        <idefav-project-common>1.0.0</idefav-project-common>
     </properties>
 
     <dependencyManagement>
@@ -43,10 +44,21 @@
                 <version>${mybatis-plus.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.idefav</groupId>
+                <artifactId>idefav-project-common</artifactId>
+                <version>${idefav-project-common}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.github.davidfantasy</groupId>
                 <artifactId>mybatis-plus-generator-ui</artifactId>
                 <version>${mybatis-plus-generator-ui.version}</version>
                 <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>ma.glasnost.orika</groupId>
+                <artifactId>orika-core</artifactId>
+                <version>1.5.4</version>
             </dependency>
 
 
@@ -79,6 +91,11 @@
             <dependency>
                 <groupId>com.idefav</groupId>
                 <artifactId>idefavcd-biz</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.idefav</groupId>
+                <artifactId>idefavcd-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

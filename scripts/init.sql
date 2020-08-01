@@ -68,3 +68,13 @@ create table if not exists tb_task_history
     is_del      bit      not null default 0 comment '删除标识'
 ) comment '运行历史';
 
+create table if not exists tb_user
+(
+    id          bigint      not null primary key comment '自动增长ID',
+    user_name   varchar(30) not null comment '用户名',
+    password    varchar(50) not null comment '密码',
+    create_time datetime    not null default current_timestamp comment '创建时间',
+    update_time datetime    not null default current_timestamp on update current_timestamp comment '修改时间',
+    is_del      bit         not null default 0 comment '删除标识'
+) comment '用户表';
+

@@ -16,6 +16,14 @@
             <groupId>com.idefav</groupId>
             <artifactId>idefavcd-service</artifactId>
         </dependency>
+        <dependency>
+            <groupId>ma.glasnost.orika</groupId>
+            <artifactId>orika-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.idefav</groupId>
+            <artifactId>idefavcd-model</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

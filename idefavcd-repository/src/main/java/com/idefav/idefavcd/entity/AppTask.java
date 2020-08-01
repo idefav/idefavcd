@@ -1,5 +1,11 @@
 package com.idefav.idefavcd.entity;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
+
 import java.util.Date;
 import java.io.Serializable;
 /**
@@ -10,6 +16,9 @@ import java.io.Serializable;
  * @author idefav
  * @since 2020-06-21
  */
+@Data
+@EqualsAndHashCode(callSuper = false)
+@Accessors(chain = true)
 @TableName("tb_app_task")
 public class AppTask implements Serializable {
 
@@ -18,6 +27,7 @@ public class AppTask implements Serializable {
     /**
      * 自动增长ID
      */
+    @TableId(type = IdType.AUTO)
     private Long id;
 
     /**
